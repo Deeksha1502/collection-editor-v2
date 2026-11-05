@@ -12,6 +12,8 @@ export interface IContent {
   status?: string;
   visibility?: string;
   pkgVersion?: number;
+  /** ECML content's body; returned only when the read asks for it via `fields`. */
+  body?: unknown;
 }
 
 export interface ILibraryItem extends IContent {
